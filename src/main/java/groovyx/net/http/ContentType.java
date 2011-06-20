@@ -70,7 +70,9 @@ public enum ContentType {
 	/** <code>application/x-www-form-urlencoded</code> */
 	URLENC("application/x-www-form-urlencoded"),
 	/** <code>application/octet-stream</code> */
-	BINARY("application/octet-stream");
+	BINARY("application/octet-stream"),
+    /**multipart/form-data */
+    MULTIPART_FORM("multipart/form-data");
 	
 	private final String[] ctStrings;
 	public String[] getContentTypeStrings() { return ctStrings; } 
@@ -94,5 +96,5 @@ public enum ContentType {
 	
 	private ContentType( String... contentTypes ) {
 		this.ctStrings = contentTypes;
-	}
+	    }
 }	
